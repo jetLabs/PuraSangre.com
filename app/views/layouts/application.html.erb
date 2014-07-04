@@ -8,7 +8,7 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  
+
   <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
@@ -17,12 +17,13 @@
 
   <%= csrf_meta_tags %>
 </head>
+<%= yield %>
 <body>
 
 	
 	
 	
-	<%= yield %>
+	
 	
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<!-- Latest compiled and minified JavaScript -->
