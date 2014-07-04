@@ -2,23 +2,34 @@
 <html>
 <head>
   <title>Purasangre</title>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+
+
+
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+	
+	<div id="wrapper">
+		<div id="navigation-bar">
+			
+		</div>
+
+	</div>
 	
 	<%= yield %>
 	
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-
-	<script>
-		$('body').blurjs({
-			source: 'body',
-			radius: 7,
-			overlay: 'rgba(0,0,0,0.6)'
-		});
-	</script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 </html>
