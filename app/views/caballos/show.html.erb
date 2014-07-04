@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <%= image_tag @caballo.imagen, {height: 300} %>
+</p>
+
+<p>
   <strong>Sexo:</strong>
   <%= @caballo.sexo %>
 </p>
@@ -23,6 +27,11 @@
 <p>
   <strong>Precio:</strong>
   <%= @caballo.precio %>
+</p>
+
+<p>
+  <strong>Imagen:</strong>
+  <%= @caballo.imagen %>
 </p>
 
 <%= link_to 'Edit', edit_caballo_path(@caballo) %> |
