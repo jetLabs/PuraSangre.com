@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @caballo.sexo %>
+</p>
+
+<p>
+  <strong>Record:</strong>
+  <%= @caballo.record %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @caballo.age %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @caballo.nombre %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @caballo.precio %>
+</p>
+
+<%= link_to 'Edit', edit_caballo_path(@caballo) %> |
+<%= link_to 'Back', caballos_path %>

@@ -1,4 +1,6 @@
 Purasangre::Application.routes.draw do
+  resources :caballos
+
   get "static_pages/index"
 
   root 'static_pages#index'
