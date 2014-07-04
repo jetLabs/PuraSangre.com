@@ -1,3 +1,17 @@
 // Place all the styles related to the Caballos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.caballos {
+
+	li {
+		display: inline-block;
+		margin: 10px 5% 0 5%;
+
+		.detalle {
+			background-color: rgba(44, 44, 44, 0.2);
+			padding: 15px 10px;
+		}
+	}
+
+}
