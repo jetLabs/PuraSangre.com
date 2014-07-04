@@ -69,6 +69,6 @@ class CaballosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def caballo_params
-      params.require(:caballo).permit(:sexo, :record, :age, :nombre, :precio)
+      params.require(:caballo).permit(:sexo, :record, :age, :nombre, :precio, :imagen)
     end
 end
