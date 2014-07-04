@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sexo: MyString
+  record: MyString
+  age: 1
+  nombre: MyString
+  precio: 1.5
+
+two:
+  sexo: MyString
+  record: MyString
+  age: 1
+  nombre: MyString
+  precio: 1.5
