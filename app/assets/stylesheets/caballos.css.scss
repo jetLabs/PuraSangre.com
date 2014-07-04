@@ -11,6 +11,10 @@
 		.detalle {
 			background-color: rgba(44, 44, 44, 0.2);
 			padding: 15px 10px;
+
+			.precio {
+				float: right;
+			}
 		}
 	}
 
