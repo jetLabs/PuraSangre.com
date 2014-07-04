@@ -3,12 +3,22 @@
 <head>
   <title>Purasangre</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	
+	<%= yield %>
+	
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 
-<%= yield %>
-
+	<script>
+		$('body').blurjs({
+			source: 'body',
+			radius: 7,
+			overlay: 'rgba(0,0,0,0.6)'
+		});
+	</script>
 </body>
 </html>
