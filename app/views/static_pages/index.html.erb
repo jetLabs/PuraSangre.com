@@ -11,49 +11,78 @@
 
   <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:900,400,100,300' rel='stylesheet' type='text/css'>
 
 
 
   <%= csrf_meta_tags %>
 </head>
-<%= yield %>
+
 <body>
-	<div id="wrapper-landing">
-		<div id="navigation-bar">
-		
+	<%= yield %>
+	<!--<div id="wrapper-landing"> -->
+	<div class="bg-landing">
+		<div id="header">
+			<h3 class="h3-landing">Find your winner here.</h3>
+			<h3 class="h4-landing">The biggest market of all thoroughbreds</h3>
+			<form class="form-inline search" role="form">
+			  <div class="form-group" >
+			    <input type="text" class="form-control" style="width:600px;" id="exampleInputEmail2" placeholder="What are you looking for?">
+			  </div>
+			  <div class="form-group">
+			    <button type="submit" class="btn btn-primary" style=" font-weight: bold;">Search</button>
+			  </div>
+			 </form>
 		</div>
-		<h1 class="h1-landing"> PURA SANGRE </h1>
-		<br>
-		<h3 class="h3-landing">The biggest market of all thoroughbreds</h3>
+		
+		
+		<!--<h1 class="h1-landing"> PURA SANGRE </h1>-->
+		
 
-		<br>
-		<br>
-		<br>
-		<h4 class="h4-landing">What are you looking for?</h4>
-		<br>
-		<br>
-		<br>
-		<br>
-
+	</div>
+	
+	<div id="content">
 		<div id="buttons">
+			<h3 style="color: rgba(0,0,0,0.8); font-weight: 400; font-family: 'Roboto'; margin-left:-15px;">Thoroughbreds guide:</h3>
+			<p style="color: rgba(0,0,0,0.8); font-weight: 400; font-family: 'Roboto'; margin-top:5px; margin-left:-15px; margin-bottom: 20px;">We can guide you giving some categories for your search:</p>
 			<div class="row">
-			  <div class="col-md-4"><a href="">Padrillos</a></div>
-			  <div class="col-md-4"><a href="">Machos</a></div>
-			  <div class="col-md-4"><a href="">Hembras</a></div>
+			  <div class="col-md-3 racehorse">
+			  	<div id="text">Racehorse</div>
+			  	<div class="black0"></div>
+			  </div>
+			  <div class="col-md-3 col-md-offset-1 polo">
+			  	<div id="text">Polo</div>
+			  	<div class="black0"></div>
+			  </div>
+			  <div class="col-md-3 col-md-offset-1 foal">
+			  	<div id="text">Foals</div>
+			  	<div class="black0"></div>
+			  </div>
 			</div>
+		</div>
+		<div id="carousel">
+			<%= image_tag "caballo2.jpg", {height: 150}  %>
+			<%= image_tag "caballo1.jpg", {height: 150}  %>
+			<%= image_tag "caballo3.jpg", {height: 150}  %>
+			<%= image_tag "caballo22.jpg", {height: 150}  %>
+			<%= image_tag "caballo11.jpg", {height: 150}  %>
+			<%= image_tag "caballo33.jpg", {height: 150}  %>
 		</div>
 
 	</div>
+	
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<script>
 		$( document ).ready(function() {
-			$('body').addClass( "bg-landing" );
+			//$('body').addClass( "bg-landing" );
 		        $('.bg-landing').blurjs({
-					source: 'body',
+					source: '.bg-landing',
 					radius: 7,
 					overlay: 'rgba(0,0,0,0.8)'
 				});
+		    // Using default configuration
+		    $('#carousel').carouFredSel();
+
 		 });
 	</script>
 	<!-- Latest compiled and minified JavaScript -->

@@ -12,16 +12,21 @@
  *= require_tree .
  */
 
- html, body {
- margin: 0px;
- padding: 0px;
- border: 0px;
+ html, body, h1, h2, h3, h4 {
+	 margin: 0px;
+	 padding: 0px;
+	 border: 0px;
+	 font-family: 'Roboto', sans-serif;
  }
 
  *{
  	margin: 0 0;
  	padding: 0 0;
  	border: 0px;
+ }
+
+ body{
+ 	background-color: #CBFFCB;
  }
 
  a,li,ul{

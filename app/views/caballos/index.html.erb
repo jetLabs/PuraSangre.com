@@ -3,11 +3,14 @@
 <ul class="caballos">
   <% @caballos.each do |caballo| %>
     <li>
-      <%= image_tag caballo.imagen, {height: 280}%>
-      <div class="detalle">
-        <span><%= "#{caballo.nombre} - #{caballo.age} years" %></span>
-        <span class="precio"><%= number_to_currency(caballo.precio) %></span>
+      <div class="horse-wrap">
+        <%= image_tag caballo.imagen, {height: 280}%>
+        <div class="detalle">
+          <span><%= "#{caballo.nombre} - #{caballo.age} years" %></span>
+          <span class="precio"><%= number_to_currency(caballo.precio) %></span>
+        </div>
       </div>
+    </li>
   <% end %>
 </ul>
 

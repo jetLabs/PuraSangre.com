@@ -6,11 +6,10 @@
 
 	li {
 		display: inline-block;
-		margin: 10px 5% 0 5%;
+		margin: 2px 2px;
 
 		.detalle {
 			background-color: rgba(44, 44, 44, 0.2);
-			padding: 15px 10px;
 
 			.precio {
 				float: right;
@@ -18,4 +17,17 @@
 		}
 	}
 
+}
+
+.horse-wrap{
+	height:300px;
+	width:300px;
+	
+  overflow: hidden;
+}
+
+.horse-wrap > img{
+  width: auto;
+  height : auto;
+  max-height: 100%;
 }
