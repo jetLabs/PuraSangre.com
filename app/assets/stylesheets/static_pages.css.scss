@@ -171,14 +171,26 @@ and (min-width : 1224px) {
 	height: 200px;
 }
 
+#wrapper-recent{
+	background-color: #f7f7f7;
+	padding: 20px 20px;
+}
+
+#guide{
+	background-color: #CBFFCB;
+	padding: 20px 20px;
+	border: 1px solid #dbdbdb;
+	border-radius: 2px;
+}
+
 #buttons{
 	font-family: 'Roboto', sans-serif;
-	margin-top: 100px;
 	font-weight: 100;
 	width: 65%;
 	color: #000;
 	font-size: 20px;
 	margin: 50px auto;
+	
 }
 
 #buttons #text{
@@ -198,7 +210,7 @@ and (min-width : 1224px) {
 }
 
 #recent{
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
 }
 
@@ -211,7 +223,7 @@ and (min-width : 1224px) {
 	display:inline-block;
 	height:300px; 
 	width:250px;
-	background-color:#efefef;
+	background-color:#f7f7f7;
 }
 
 .advert-p{

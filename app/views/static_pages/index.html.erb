@@ -9,8 +9,6 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 
-  <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto:900,400,100,300' rel='stylesheet' type='text/css'>
 
 
@@ -42,119 +40,124 @@
 	</div>
 	
 	<div id="content">
-		<div id="buttons">
-			<h3 style="color: rgba(0,0,0,0.8); font-weight: 400; font-family: 'Roboto'; margin-left:-15px;">Thoroughbreds guide:</h3>
-			<p style="color: rgba(0,0,0,0.8); font-weight: 400; font-family: 'Roboto'; margin-top:5px; margin-left:-15px; margin-bottom: 20px;">We can guide you giving some categories for your search:</p>
-			<div class="row">
-			  <div class="col-md-3 racehorse">
-			  	<div id="text">Racehorse</div>
-			  	<div class="black0"></div>
-			  </div>
-			  <div class="col-md-3 col-md-offset-1 polo">
-			  	<div id="text">Polo</div>
-			  	<div class="black0"></div>
-			  </div>
-			  <div class="col-md-3 col-md-offset-1 foal">
-			  	<div id="text">Foals</div>
-			  	<div class="black0"></div>
-			  </div>
-			</div>
-			<br>
-			<div class="row">
-			  <div class="col-md-3 unraced">
-			  	<div id="text">Unraced</div>
-			  	<div class="black0"></div>
-			  </div>
-			  <div class="col-md-3 col-md-offset-1 winners">
-			  	<div id="text">Winners</div>
-			  	<div class="black0"></div>
-			  </div>
-			  <div class="col-md-3 col-md-offset-1 raid">
-			  	<div id="text">Raid</div>
-			  	<div class="black0"></div>
-			  </div>
-			</div>
-		</div>
-		<div id="recent">
-			<div id="carousel" style="height:300px !important;">
-				<ul class="advert-list" style="height:300px !important;">
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo2.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo22.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo1.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo11.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo3.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo33.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo2.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo22.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo1.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo11.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo3.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-					<li class="advert-li">
-						<a href=""><%= image_tag "caballo33.jpg", {height: 150}  %></a>
-						<h4 class="advert-h4">INVASOR</h4>
-						<p class="advert-p">Record(G-P): 11-5</p>
-						<h4 class="price-h4">US$ 14.000</h4>
-					</li>
-				</ul>
+		<div id="guide">
+			<div id="buttons">
+				<h3 style="color: rgba(0,0,0,0.8); font-weight: 400; font-family: 'Roboto'; margin-left:-15px;">Thoroughbreds guide:</h3>
+				<p style="color: rgba(0,0,0,0.8); font-weight: 400; font-family: 'Roboto'; margin-top:5px; margin-left:-15px; margin-bottom: 20px;">We can guide you giving some categories for your search:</p>
+				<div class="row">
+				  <div class="col-md-3 racehorse">
+				  	<div id="text">Racehorse</div>
+				  	<div class="black0"></div>
+				  </div>
+				  <div class="col-md-3 col-md-offset-1 polo">
+				  	<div id="text">Polo</div>
+				  	<div class="black0"></div>
+				  </div>
+				  <div class="col-md-3 col-md-offset-1 foal">
+				  	<div id="text">Foals</div>
+				  	<div class="black0"></div>
+				  </div>
+				</div>
+				<br>
+				<div class="row">
+				  <div class="col-md-3 unraced">
+				  	<div id="text">Unraced</div>
+				  	<div class="black0"></div>
+				  </div>
+				  <div class="col-md-3 col-md-offset-1 winners">
+				  	<div id="text">Winners</div>
+				  	<div class="black0"></div>
+				  </div>
+				  <div class="col-md-3 col-md-offset-1 raid">
+				  	<div id="text">Raid</div>
+				  	<div class="black0"></div>
+				  </div>
+				</div>
 			</div>
 		</div>
-		<br><br>
 		
+		<div id="wrapper-recent">
+			<div id="recent">
+				<h3 style="color: rgba(0,0,0,0.8); font-weight: 400; font-family: 'Roboto'; margin-left:-55px;">Recent activity:</h3>
+				<p style="color: rgba(0,0,0,0.8); font-weight: 400; font-family: 'Roboto'; margin-top:5px; margin-left:-55px; margin-bottom: 20px;">Check out the new horses on Purasangre:</p>
+				<div id="carousel" style="height:300px !important;">
+					<ul class="advert-list" style="height:300px !important;">
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo2.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo22.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo1.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo11.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo3.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo33.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo2.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo22.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo1.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo11.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo3.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+						<li class="advert-li">
+							<a href=""><%= image_tag "caballo33.jpg", {height: 150}  %></a>
+							<h4 class="advert-h4">INVASOR</h4>
+							<p class="advert-p">Record(G-P): 11-5</p>
+							<h4 class="price-h4">US$ 14.000</h4>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
 	</div>
 	
