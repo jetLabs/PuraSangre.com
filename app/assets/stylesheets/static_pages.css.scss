@@ -124,12 +124,14 @@ and (min-width : 1224px) {
 	-webkit-transition: opacity .25s ease;
 } 
 
-.racehorse:hover .black0, .polo:hover .black0, .foal:hover .black0,  { 
+.racehorse:hover .black0, .polo:hover .black0, .foal:hover .black0, 
+.raid:hover .black0, .winners:hover .black0, .unraced:hover .black0  { 
 	z-index:1;
 	opacity:.5; 
 } 
 
-.racehorse:hover #text ,.polo:hover #text ,.foal:hover #text { 
+.racehorse:hover #text ,.polo:hover #text ,.foal:hover #text,
+.raid:hover #text ,.winners:hover #text ,.unraced:hover #text { 
 	z-index:100;
 	opacity:1; 
 } 
@@ -148,11 +150,32 @@ and (min-width : 1224px) {
 	height: 200px;
 }
 
+.unraced{
+	background-image:url('unraced.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+}
+
+.winners{
+	background-image:url('winners.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+}
+
+.raid{
+	background-image:url('raid.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+}
+
 #buttons{
 	font-family: 'Roboto', sans-serif;
 	margin-top: 100px;
 	font-weight: 100;
-	width: 70%;
+	width: 65%;
 	color: #000;
 	font-size: 20px;
 	margin: 50px auto;
@@ -174,6 +197,41 @@ and (min-width : 1224px) {
 	background-color: transparent;
 }
 
+#recent{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.caroufredsel_wrapper{
+	height: 300px !important;
+}
+
+.advert-li{
+	text-align:center;
+	display:inline-block;
+	height:300px; 
+	width:250px;
+	background-color:#efefef;
+}
+
+.advert-p{
+	color:rgba(0,0,0,.7);
+	text-align:left;
+	margin-left: 35px;
+	margin-top:5px;
+}
+
+.advert-h4{
+	color: rgba(0,0,0,.7);
+	font-weight: 400;
+}
+
+.price-h4{
+	color: rgba(255,255,255,.7);
+	font-weight: 400;
+	background-color: red;
+	width:50%;
+	margin: 0 auto;}
 
 
 
