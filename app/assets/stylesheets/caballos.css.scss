@@ -1,0 +1,33 @@
+// Place all the styles related to the Caballos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.caballos {
+
+	li {
+		display: inline-block;
+		margin: 2px 2px;
+
+		.detalle {
+			background-color: rgba(44, 44, 44, 0.2);
+
+			.precio {
+				float: right;
+			}
+		}
+	}
+
+}
+
+.horse-wrap{
+	height:300px;
+	width:300px;
+	
+  overflow: hidden;
+}
+
+.horse-wrap > img{
+  width: auto;
+  height : auto;
+  max-height: 100%;
+}
